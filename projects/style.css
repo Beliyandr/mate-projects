@@ -1,0 +1,14 @@
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+}
+
+.form {
+  padding: 10px;
+}
+.form-field {
+  margin-bottom: 10px;
+  display: block;
+}

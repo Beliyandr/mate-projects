@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mate Form</h1>
+    <header class="header"></header>
+    <main class="main">
+      <form action="" class="form" novalidate>
+        <div class="form-field">
+          UserName: <br />
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter your name"
+            pattern="\w+"
+          />
+        </div>
+        <div class="form-field">
+          Email: <br />
+          <input type="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-field">
+          Password:<br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <label class="form-field">
+          <input type="checkbox" name="accepted" value="yes" />
+          I accept the terms
+        </label>
+
+        <div class="form-field">
+          <input
+            id="remember-me"
+            type="checkbox"
+            checked
+            name="remember"
+            value="yes"
+          />
+          <label for="remember-me"> Remember me </label>
+        </div>
+
+        <button>Send</button>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
