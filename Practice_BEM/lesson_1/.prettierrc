@@ -1,0 +1,14 @@
+{
+  "semi": true,
+  "singleQuote": false,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "endOfLine": "crlf",
+  "tag-self-close": false,
+  "closeEmptyJsxElements": false,
+  "html.format.wrapAttributes": "force-aligned"
+}
+
