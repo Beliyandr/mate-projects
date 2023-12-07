@@ -1,0 +1,11 @@
+/* variables + mixins */
+/* blocks */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=main.css.map */

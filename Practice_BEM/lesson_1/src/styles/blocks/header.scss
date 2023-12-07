@@ -1,0 +1,52 @@
+.header {
+  box-sizing: border-box;
+  /* padding: 24px 20px 40px; */
+  height: 100vh;
+  background-image: url(../images/header-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__waves {
+    background-image: url(../images/sound-waves.png);
+    width: 48px;
+    height: 58px;
+    margin-bottom: 16px;
+    background-size: cover;
+
+    @include onTablet {
+      width: 64px;
+      height: 76px;
+      margin-bottom: 40px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1.5px;
+
+    @include onTablet {
+      font-size: 40px;
+    }
+  }
+  &__bottom {
+    padding-bottom: 40px;
+    @include contentPaddingInline;
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+}

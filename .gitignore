@@ -3,3 +3,24 @@ env.local
 
 .idea
 .vscode
+
+# IDE
+.idea
+.vscode
+
+# Node
+node_modules
+/node_modules
+./node_modules
+../node_modules
+*node_modules
+
+
+# MacOS
+.DS_Store
+
+# Generated files
+backstop_data
+dist
+.cache
+.parcel-cache
