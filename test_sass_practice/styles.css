@@ -1,75 +1,59 @@
-body {
-  background-color: #565656;
-}
-
-
-
-.game{
-  --cell-size: 120px;
-  --player-size: calc(0.8 * var(--cell-size));
-  --shift: calc((var(--cell-size) - var(--player-size)) / 2);
-
-
-
+.game {
   position: relative;
-  width: calc(3 * var(--cell-size));
+  width: 500px;
   border: 2px solid #000;
-  
 }
-
-.game__field{
+.game__field {
   display: flex;
   flex-wrap: wrap;
 }
-
-.game__cell{
+.game__cell {
   box-sizing: border-box;
-  height: var(--cell-size);
-  width: var(--cell-size);
+  height: 100px;
+  width: 100px;
   border: 1px dashed #000;
 }
-
-.game__player{
+.game__player {
   position: absolute;
-  top: var(--shift);
-  left: var(--shift);
-
-  width: var(--player-size);
-  height: var(--player-size);
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
   background-color: #000;
-
   border-radius: 50%;
 }
-
+.game__player--x-1 {
+  left: 10px;
+}
+.game__player--x-2 {
+  left: 110px;
+}
+.game__player--x-3 {
+  left: 210px;
+}
+.game__player--y-1 {
+  top: 10px;
+}
+.game__player--y-2 {
+  top: 110px;
+}
+.game__player--y-3 {
+  top: 210px;
+}
+.game__player--y-4 {
+  top: 310px;
+}
+.game__player--y-5 {
+  top: 410px;
+}
 .game__player--color--red {
-  background-color: red;
+  background-color: #f00;
 }
-
 .game__player--color--green {
-  background-color: green;
+  background-color: #080;
 }
-
 .game__player--color--blue {
-  background-color: blue;
+  background-color: #00f;
 }
 
-.game__player--x-1{
-  left: var(--shift);
-}
-.game__player--x-2{
-  left: calc(var(--cell-size) + 10px);
-}
-.game__player--x-3{
-  left: calc(2 * var(--cell-size) + 10px);
-}
-
-.game__player--y-1{
-  top: var(--shift);
-}
-.game__player--y-2{
-  top: calc(var(--cell-size) + 10px);
-}
-.game__player--y-3{
-  top: calc(2 * var(--cell-size) + 10px);
-
-}
+/*# sourceMappingURL=styles.css.map */
