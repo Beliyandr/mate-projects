@@ -1,28 +1,17 @@
 .main {
-  display: grid;
-  row-gap: 96px;
-  padding-block: 96px;
 
-  @include contentPaddingInline;
+  background-color: #fff;
 
-  @include onTablet {
-    padding-block: 120px;
-    row-gap: 120px;
+  &__content {
+
+    display: grid;
+    row-gap: 96px;
+    padding-block: 96px;
+
+
+    @include onTablet {
+      padding-block: 120px;
+      row-gap: 120px;
+    }
   }
 }
-
-
-// {
-//   "semi": true,
-//   "singleQuote": false,
-//   "jsxSingleQuote": false,
-//   "bracketSpacing": true,
-//   "printWidth": 80,
-//   "tabWidth": 2,
-//   "arrowParens": "always",
-//   "endOfLine": "crlf",
-//   "tag-self-close": false,
-//   "closeEmptyJsxElements": false,
-//   "html.format.wrapAttributes": "force-aligned"
-// }
-
