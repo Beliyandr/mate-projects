@@ -1,3 +1,11 @@
+body {
+  transition: all 0.3s;
+}
+
+p {
+  margin: 0;
+}
+
 @import './utils/variables';
 @import "./utils/mixins";
 
@@ -11,5 +19,14 @@
 @import "blocks/main";
 @import "blocks/recommended";
 @import "blocks/products";
+@import "blocks/how-to-buy";
+@import "blocks/categories";
+
+@import "blocks/contacts";
+@import "blocks/form";
 
 @import "blocks/section-title";
+@import "blocks/button";
+
+
+@import "blocks/footer";

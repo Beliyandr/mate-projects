@@ -1,0 +1,65 @@
+.contacts {
+
+  &__wrapper {
+    display: grid;
+    row-gap: 48px;
+    align-items: start;
+
+
+    @include pageGrid;
+
+
+  }
+
+  &__form {
+
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+
+      grid-column: span 5;
+    }
+  }
+
+  &__blocks {
+    display: grid;
+    row-gap: 24px;
+
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+
+      grid-column: 8 / -1;
+    }
+  }
+
+  &__block {
+    display: grid;
+    row-gap: 8px;
+  }
+
+  &__name {
+    color: #9FADC2;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__text {
+    color: $second-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.button {}
