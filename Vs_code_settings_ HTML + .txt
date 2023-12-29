@@ -1,0 +1,274 @@
+{
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.windows": {},
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-bash"
+    }
+  },
+  "auto-close-tag.excludedTags": [
+    "area",
+    "base",
+    "br",
+    "col",
+    "command",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "keygen",
+    "link",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr"
+  ],
+  /*
+   * ОБЩИЕ НАСТРОЙКИ
+   */
+  // "editor.linkedEditing": true,
+  "editor.fontSize": 16,
+  "files.encoding": "utf8",
+  // кодировка файлов
+  "files.eol": "\n",
+  // концы строк как в linux
+  "files.insertFinalNewline": true,
+  // пустая строка в конце файла
+  "files.trimTrailingWhitespace": true,
+  // удалять пробелы в конце строк
+  "editor.insertSpaces": true,
+  // заменять табуляцию на пробелы
+  "editor.tabSize": 2,
+  // табуляция заменяется 2 пробелами
+  "editor.renderWhitespace": "all",
+  // показывать символы пробелов
+  /*
+   * ФОРМАТИРОВАНИЕ
+   */
+  // По умолчанию форматирование кода запрещено
+  "editor.formatOnSave": false,
+  // форматировать код при сохранении файла
+  "editor.formatOnPaste": false,
+  // форматировать при вставке фрагмента кода
+  // набор действий при сохранении файла
+  "editor.defaultFormatter": null,
+  // Разрешить или запретить расширения eslint и prettier
+  "prettier.enable": true,
+  // нужен рестарт vs code
+  "eslint.enable": true,
+  // Настройки форматирования javascript
+  "eslint.format.enable": true,
+  // запретить или разрешить форматирование
+  "eslint.run": "onType",
+  // запускать проверку кода по мере печати кода
+  "eslint.probe": [
+    // какие файлы нужно проверять
+    "javascript"
+  ],
+  "eslint.rules.customizations": [
+    // для проблем форматирования кода уровень info
+    {
+      "rule": "prettier/prettier",
+      "severity": "info"
+    }
+  ],
+  /************************************************************************/
+  // Настройки форматирования html
+  "html.format.enable": true,
+  // разрешить форматирование html-кода
+  "html.format.wrapLineLength": 80,
+  // максимальная длина сроки до переносана новую
+  "html.format.unformatted": null,
+  // эти теги не форматировать (см.ссылку в подсказке)
+  "html.format.contentUnformatted": "pre,code,textarea",
+  // контент этих тегов не форматировать
+  // пустая строка перед этими тегами
+  "html.format.preserveNewLines": true,
+  // сохранять или нет пустые строки
+  "html.format.maxPreserveNewLines": null,
+  // сколько пустых строк сохранять
+  "html.format.wrapAttributesIndentSize": null,
+  // размер отступа при переносе и выравнивании атр.
+  "html.validate.scripts": true,
+  // проверять js-скрипты внутри html-кода
+  "html.validate.styles": true,
+  "html.completion.attributeDefaultValue": "doublequotes",
+  "javascript.preferences.quoteStyle": "single",
+  "html.format.indentInnerHtml": true,
+  "html.format.extraLiners": "",
+  "files.autoSave": "onFocusChange",
+  "html.format.wrapAttributes": "force-expand-multiline",
+  // перенос и выравнивание атрибутов
+  "editor.indentSize": "tabSize",
+  "editor.fontLigatures": false,
+  "git.openRepositoryInParentFolders": "never",
+  "window.zoomLevel": -1,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "emmet.preferences": {
+    "output.inlineBreak": 2
+  },
+
+  // // проверять css-стили внутри html-кода
+  // // "[html]": {
+  // //   "editor.formatOnSave": true,
+  // //     "editor.formatOnPaste": true,
+  // //     "editor.defaultFormatter": "vscode.html-language-features",
+  // // },
+  // // Настройки форматирования markdown
+  // // "[markdown]": {
+  // //   "editor.formatOnSave": true,
+  // //     "editor.formatOnPaste": true,
+  // //     "editor.defaultFormatter": "vscode.markdown-language-features"
+  // // },
+  // /*
+  //  * РАСШИРЕНИЯ
+  //  */
+  // // Расширение Prettier для форматирования кода
+  // "prettier.arrowParens": "avoid",
+  // // "prettier.arrowParens": "always",
+  // // скобки вокруг единственного параметра стрелочной функции
+  // "prettier.bracketSpacing": true,
+  // // пробелы между скобками в литералах объектов
+  // "prettier.endOfLine": "lf",
+  // // окончания строк
+  // "prettier.htmlWhitespaceSensitivity": "css",
+  // // форматирование html с учетом пробелов
+  // "prettier.insertPragma": false,
+  // // вставлять спец.комментарий в начало файла
+  // // "prettier.jsxBracketSameLine": false,
+  // // где будет завершающий > многострочного jsx-элемента
+  // "prettier.jsxSingleQuote": false,
+  // // использовать в jsx одинарные кавычки вместо двойных
+  // "prettier.printWidth": 80,
+  // // на какой позиции выполнять перенос строки при печати
+  // "prettier.proseWrap": "preserve",
+  // // как обрабатывать markdown файлы
+  // "prettier.quoteProps": "as-needed",
+  // // свойства объекта в кавычках или без кавычек
+  // "prettier.requirePragma": false,
+  // // форматировать только файлы со спец.комментарием в начале
+  // "prettier.semi": true,
+  // // точка с запятой в конце операторов
+  // "prettier.singleQuote": true,
+  // // использовать одинарные кавычки вместо двойных
+  // "prettier.tabWidth": 2,
+  // // заменять табуляцию на 4 пробела
+  // "prettier.trailingComma": "es5",
+  // // конечные запятые в объектах и массивах
+  // "prettier.useTabs": false,
+  // // "prettier.useTabs": true,
+  // // делать отступы с помощью табуляции
+  // "prettier.vueIndentScriptAndStyle": false,
+  // // отступ внутри <script> и <style> в vue файлах
+  // "prettier.embeddedLanguageFormatting": "auto", // форматировать встроенный код
+  // "prettier.bracketSameLine": false,
+  // "prettier.requireConfig": true,
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // "liveServer.settings.donotVerifyTags": true,
+  // "liveServer.settings.CustomBrowser": "chrome",
+  // "liveServer.settings.host": "127.0.55.1",
+  // "liveServer.settings.fullReload": true,
+  // "liveServer.settings.donotShowInfoMsg": true,
+  // "liveServer.settings.port": 5551,
+  // "workbench.sideBar.location": "left",
+  // "editor.minimap.enabled": false,
+  // "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  // // "liveSassCompile.settings.formats": [
+  // //     // This is Default.
+  // //     {
+  // //         "format": "expanded",
+  // //         "extensionName": ".css",
+  // //         "savePath": "~/../css/"
+  // //     },
+  // // ],
+  // "svg.preview.mode": "svg",
+  // "terminal.integrated.profiles.windows": {
+  //   "PowerShell": {
+  //     "source": "PowerShell",
+  //     "icon": "terminal-powershell"
+  //   },
+  //   "Command Prompt": {
+  //     "path": [
+  //       "${env:windir}\\Sysnative\\cmd.exe",
+  //       "${env:windir}\\System32\\cmd.exe"
+  //     ],
+  //     "args": [],
+  //     "icon": "terminal-cmd"
+  //   },
+  //   "Git Bash": {
+  //     "source": "Git Bash"
+  //   }
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "php.validate.executablePath": "",
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "git.confirmSync": false,
+  // "emmet.preferences": {
+  //   "output.inlineBreak": 2
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // // "auto-close-tag.enableAutoCloseTag": false,
+  // // "auto-close-tag.enableAutoCloseSelfClosingTag": false,
+  // // "html.autoClosingTags": false,
+  // // "javascript.autoClosingTags": false,
+  // // "typescript.autoClosingTags": false
+}
