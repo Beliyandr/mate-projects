@@ -4,8 +4,8 @@ body {
 
 .people {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  gap: 40px 30px;
+  grid-template-columns: repeat(4, 220px);
+  gap: 0px 10px;
   margin: 0 auto;
   max-width: 920px;
   padding-top: 30px;
@@ -13,13 +13,38 @@ body {
 
 @media (max-width: 1000px) {
   .people {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 220px);
     max-width: 430px;
   }
 }
 
+.person {
+  padding: 10px 10px 16px 10px;
+  position: relative;
+  z-index: 1;
 
-.person {}
+  transition:
+    transform 1s ease 1s,
+    border-radius 1s ease 1s;
+}
+
+.person:hover {
+  border-radius: 10px;
+  background-color: #EEE;
+  position: relative;
+  z-index: 2;
+
+  transform: scale(1.2);
+}
+
+.person:hover .extra {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  padding: 10px 10px 16px 10px;
+}
 
 .photo {
   position: relative;
@@ -28,7 +53,15 @@ body {
 .photo img {
   width: 100%;
   border-radius: 50%;
+  transition:
+    border-radius 1s ease 1s;
 }
+
+.person:hover .photo img {
+  border-radius: 60px;
+}
+
+
 
 .rank {
   position: absolute;
@@ -36,34 +69,49 @@ body {
   right: 10px;
   transform: translateY(-50%);
 
-  background-color: #fff;
-  padding: 7px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
   border-radius: 50%;
 
+  background-color: #fff;
   color: #8B0000;
   font-family: Arial;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
-
 }
 
 
 
 .details {
   text-align: center;
+}
+
+.name {
   color: #2F4F4F;
-  font-family: Arial;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 9px;
+  z-index: 2;
+  position: relative;
 }
 
-.name {}
+.extra {
+  position: absolute;
+  background-color: #EEE;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
 
-.extra {}
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
-.sport {}
-
-.pay {}
+}
