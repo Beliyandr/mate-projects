@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial;
 }
 
 .people {
@@ -19,15 +20,38 @@ body {
 }
 
 
-.person {}
+.person {
+  position: relative;
+}
+
+.person:hover {
+  border-radius: 12px;
+  background: #EEE;
+  transform: scale(1.2);
+  padding-inline: 12px;
+
+  z-index: 5;
+}
+
+.person:hover .photo img {
+  display: block;
+  border-radius: 60px;
+
+
+}
+
+.person:hover .name {
+  font-size: 24px;
+}
 
 .photo {
+  margin-bottom: 8px;
   position: relative;
 }
 
 .photo img {
+  border-radius: 200px;
   width: 100%;
-  border-radius: 50%;
 }
 
 .rank {
@@ -52,17 +76,23 @@ body {
 
 .details {
   text-align: center;
-  color: #2F4F4F;
-  font-family: Arial;
-  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
+
 }
 
-.name {}
+.name {
+  color: #2F4F4F;
+  font-size: 20px;
+  font-weight: 700;
+}
 
-.extra {}
+
+.extra {
+  color: #000;
+  font-size: 21.6px;
+  font-weight: 400;
+}
 
 .sport {}
 
