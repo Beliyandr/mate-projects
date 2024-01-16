@@ -1,49 +1,62 @@
-'use strict';
+//*! JavaScript Advanced / Array Methods / Library chaos
+// console.log(sortBooks([
+//   ['Going Over', 'Brazen'],
+//   ['The Enemy'],
+//   ['Followers', 'Belle Epoque']
+// ]));
 
-console.log(
+// function sortBooks(shelves) {
+//   const newArr = [];
+//   for (const books of shelves) {
+//     newArr.push(...books)
+//   }
+//   return newArr.sort();
+// }
 
-  // calculate('add', 6, 3), //
-  // calculate('subtract', 6, 3), //
-  // calculate('multiply', 6, 3), //
+//*! JavaScript Advanced / Array Methods / Reverse Message
+// function reverseMessage(message) {
+//   const newArr = message.split(' ');
+//   const result = [];
 
-  calculate(add, 6, 3), //
-  calculate(subtract, 42, 17), //
-  calculate(multiply, 6, 3), //
-  calculate((a, b) => a / b, 6, 3), //
+//   for (const word of newArr) {
+//     result.push([...word].reverse().join(''));
+//   }
 
-);
+//   return result.join(' ');
+// }
 
-function calculate(operation, x, y) {
-  // operation = #f_add
-  // a = 6,
-  // b = 3
-
-  return operation(x, y)
-
-  // #f_add(6,3)
-  // 9
-
-  // switch (operation) {
-  //   case 'add':
-  //     return add(a, b);
-
-  //   case 'subtract':
-  //     return subtract(a, b);
-
-  //   case 'multiply':
-  //     return multiply(a, b);
-  // }
-}
+// console.log(reverseMessage('tpircsavaJ si eht egaugnal fo erutuf'));
 
 
-function add(a, b) {
-  return a + b
-}
+//*! JavaScript Advanced / Array Methods / lastIndexOf
 
-function subtract(a, b) {
-  return a - b
-}
 
-function multiply(a, b) {
-  return a * b
-}
+// let numbers = [5, 6, 1, 4, 2, 5, 1, 4, 8, 9, 10, 2, 5];
+
+// numbers.lastIndexOf2 = function (searchElement, formIndex = this.length) {
+//   let index = -1;
+//   let formIndexNumber = formIndex;
+//   debugger
+//   if (formIndexNumber > this.length || formIndexNumber === this.length) {
+//     formIndexNumber = this.length;
+//   }
+
+//   if (formIndexNumber < 0) {
+//     formIndexNumber = Math.abs(formIndex);
+//   }
+
+//   for (let i = this.length - formIndexNumber - 1; i > 0; i--) {
+//     if (this[i] === searchElement) {
+//       index = i;
+
+//       return index;
+//     }
+//   };
+
+//   return index;
+// };
+
+// const source = [5, 6, 1, 4, 2, 5, 1, 4, 8, 9, 10, 2, 5];
+// const findIndex = numbers.lastIndexOf2(2, 4);
+
+// console.log(findIndex);

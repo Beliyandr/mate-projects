@@ -1,0 +1,37 @@
+myName: 'Misha'
+myAge: 39
+
+me: #1
+
+#1 {
+  name: "Misha",
+  age: "39",
+};
+
+
+
+
+//! Клонирование объекта
+
+const bob = {
+  name: "Bob",
+  surname: "Smith",
+  partner: null,
+};
+
+const bobCopy = clone(bob);
+
+function clone(sourse) {
+  return {
+    ...sourse,
+  };
+}
+
+function clone2(sourse) {
+  return Object.assign({}, sourse, { age: 39 });
+}
+
+const bobClone = clone2(bob);
+
+console.log(bobCopy);
+console.log(bobClone);
