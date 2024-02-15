@@ -75,6 +75,7 @@ const candies1 = ['KitKat', 'Nuts', 'Lion', 'Snickers', 'Bounty', 'Nuts'];
 
 function filter(candies, isGoodEnough) {
   const result = [];
+  debugger
 
   for (const candy of candies) {
     if (isGoodEnough(candy)) {
@@ -86,7 +87,7 @@ function filter(candies, isGoodEnough) {
 }
 
 function createSizeFilter(size) {
-
+  return (item) => item.length <= size;
 }
 
 const isUpTo4 = createSizeFilter(4);
@@ -96,4 +97,11 @@ const isUpTo6 = createSizeFilter(6);
 console.log(
   filter(candies1, isUpTo4),
   filter(candies1, isUpTo6),
+);
+
+
+const x = 100;
+
+console.log(
+  ('200' + x)
 );

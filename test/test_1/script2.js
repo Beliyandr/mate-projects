@@ -128,24 +128,24 @@
 //   })
 // );
 
-function countMatchingSocks(colors) {
-  const socksWithoutPair = {};
-  let numberOfPairs = 0;
+// function countMatchingSocks(colors) {
+//   const socksWithoutPair = {};
+//   let numberOfPairs = 0;
 
-  debugger;
+//   debugger;
 
-  for (const color of colors) {
-    // if we already have a sock of current color
-    if (socksWithoutPair[color] === 1) {
-      // we have found another pair
-      numberOfPairs++;
-      socksWithoutPair[color] = 0;
-    } else {
-      socksWithoutPair[color] = 1;
-    }
-  }
+//   for (const color of colors) {
+//     // if we already have a sock of current color
+//     if (socksWithoutPair[color] === 1) {
+//       // we have found another pair
+//       numberOfPairs++;
+//       socksWithoutPair[color] = 0;
+//     } else {
+//       socksWithoutPair[color] = 1;
+//     }
+//   }
 
-  return numberOfPairs;
-}
+//   return numberOfPairs;
+// }
 
-console.log(countMatchingSocks([10, 20, 30, 10, 50, 60]));
+// console.log(countMatchingSocks([10, 20, 30, 10, 50, 60]));
