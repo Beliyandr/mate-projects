@@ -30,31 +30,31 @@
 
 // add()
 
-const numbers = [];
+// const numbers = [];
 
-numbers.push2 = function (...arr) {
-  debugger;
-  if (arr.length === 0) {
-    return this.length;
-  }
+// numbers.push2 = function (...arr) {
+//   debugger;
+//   if (arr.length === 0) {
+//     return this.length;
+//   }
 
-  if (this.length === 0) {
-    for (let i = 0; i < arr.length; i++) {
-      this[i] = arr[i];
-      return this.length
-    }
-  }
+//   if (this.length === 0) {
+//     for (let i = 0; i < arr.length; i++) {
+//       this[i] = arr[i];
+//       return this.length
+//     }
+//   }
 
-  if (this.length !== 0) {
-    const length = this.length;
-    for (let i = 0; i < arr.length; i++) {
-      this[i + length] = arr[i];
-    }
-  }
+//   if (this.length !== 0) {
+//     const length = this.length;
+//     for (let i = 0; i < arr.length; i++) {
+//       this[i + length] = arr[i];
+//     }
+//   }
 
-  return this.length;
-};
+//   return this.length;
+// };
 
-numbers.push2(72);
+// numbers.push2(72);
 
-console.log(numbers);
+// console.log(numbers);
