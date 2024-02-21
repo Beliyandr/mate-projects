@@ -136,49 +136,46 @@
  */
 function makeSecret(secret, password) {
   let counter = 0;
-  const storage = {
-    secretInfo: [
-      { password: secret },
-    ],
+  const secretInfo = { [password]: secret };
 
+  const storage = () => {
 
-  };
-
-  function addToStorage() { }
-
-  function showStorage(pass) {
-
-  }
-
-  const actionStorage = () => {
-    actionStorage.getSecret = (pass) => {
-      if (!pass || counter > 3) {
-        counter++;
-
-        return 'Wrong password!';
-      }
-
-      counter = 0;
-
-      return () => {
+    storage.getSecret = (pass) => {
+      const result = () => {
         for (const item in storage) {
           if (item === pass) {
             return storage[item];
           }
         }
       };
+
+      console.log(result);
+
+      if (!result || counter < 3) {
+        counter++;
+
+        return 'Wrong password!';
+      }
+
+      return result;
     };
 
-    actionStorage.setSecret = (newSecret, newPassword) => { };
+    storage.setSecret = (newSecret, newPassword) => {
+      return 1;
+    };
 
     return 'Absolutely not a secret thing';
   };
 
-  return actionStorage;
+  return storage;
 }
 
 
 let a = makeSecret('a', 'b');
-console.log(a.setSecret());
+console.log('a',);
+console.log(a.getSecret());
 // console.log(a.getSecret('a'));
+
+
+
 

@@ -23,15 +23,20 @@ function User(name, role = 'User') {
   // return this;
 }
 
-User.prototype = {
-  getInfo() {
-    return `${this.role} ${this.name} has ${this.friends.length} friends.`
-  }
-
+// User.prototype = {
+//   getInfo() {
+//     return `${this.role} ${this.name} has ${this.friends.length} friends.`
+//   }
+// }
+User.prototype.getInfo = function () {
+  return `${this.role} ${this.name} has ${this.friends.length} friends.`
 }
 
-const bob = createUser('Bob');
-const alice = createUser('Alice', 'Admin');
+console.dir(User);
+
+
+const bob = new User('Bob');
+const alice = new User('Alice', 'Admin');
 
 
 console.log(bob.getInfo());
