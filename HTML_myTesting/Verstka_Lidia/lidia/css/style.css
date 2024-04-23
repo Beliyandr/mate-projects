@@ -49,8 +49,13 @@ img {
   margin-bottom: 200px;
 }
 
+.page__location {
+  margin-bottom: 240px;
+}
+
 @media (max-width: 1200px) {
 
+  .page__location,
   .page__reviews,
   .services,
   .features,
@@ -61,6 +66,7 @@ img {
 
 @media (max-width: 991.98px) {
 
+  .page__location,
   .page__reviews,
   .services,
   .features,
@@ -71,11 +77,12 @@ img {
 
 @media (max-width: 767.98px) {
 
+  .page__location,
   .page__reviews,
   .services,
   .features,
   .page__hero {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 
@@ -763,3 +770,20 @@ img {
 }
 
 /* end reviews */
+
+
+/* start location*/
+
+
+.location {}
+
+.location__container {}
+
+.location__header-block {}
+
+.location__map {
+  width: 100%;
+  aspect-ratio: 1200 / 405;
+}
+
+/* end location*/
